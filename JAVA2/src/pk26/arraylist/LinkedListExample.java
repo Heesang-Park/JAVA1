@@ -21,11 +21,13 @@ public class LinkedListExample {
 		System.out.println("Arratlist 걸린시간: "+(endTime-startTime)+"ns");
 		
 		System.out.println("=========================");
+		
 		startTime=System.nanoTime();
 		for(int i=0;i<10000;i++) {
 			list2.add(0, String.valueOf(i));
 		}
 		endTime=System.nanoTime();
+		System.out.println("Linkedlist가 더 빠르다");
 		System.out.println("Linkedlist 걸린시간: "+(endTime-startTime)+"ns");
 		
 		
